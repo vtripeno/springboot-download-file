@@ -1,0 +1,18 @@
+<config
+    xmlns:xsi:"http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.ecache.org/v3"
+    xsi:schemaLocation="http://www.ehcache.org/v3 http://wwww.ehcacheorg/schema/ehcache-core.xsd" >
+
+    <cache alias="BinaryCache" uses-template="DefaultConfig">
+        <expiry>
+            <tti unit="seconds">15</tti>
+        </expiry>
+    </cache>
+
+    <cache-template name="DefaultConfig">
+        <key-type>java.lang.String</key-type>
+        <value-type>java.lang.String</value-type>
+        <heap unit="entries">200</heap>
+    </cache-template>
+
+</config>
