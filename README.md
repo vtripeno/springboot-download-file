@@ -1,4 +1,4 @@
-#This Project is about download files using Spring Boot 
+# This Project is about download files using Spring Boot 
 
 This project has just two routes, one for discovery all files in a folder inside the server and another one for return the required file from the server.
 
